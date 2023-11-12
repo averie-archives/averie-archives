@@ -1,0 +1,18 @@
+project:
+  type: website
+  output-dir: docs
+website:
+  title: "Averie's archives"
+  navbar:
+    left:
+      - href: index.qmd
+        text: About
+      - projects.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual

@@ -1,0 +1,89 @@
+---
+title: "Principal Component Analysis on U.S. Gini Index"
+categories: [PCA, R]
+date: "2023-11-01"
+title-block-banner: false
+---
+
+## Introduction 
+
+This report examines the Gini Index, a vital measure of income inequality, across all 52 U.S. states, as documented by Farris (2010). Our analysis investigates two significant historical periods: the era of the Great Depression and World War II (WWII) (1928 - 1945) and the aftermath of the Global Financial Crisis (GFC) (2007 -- 2015). The report's objective is to understand how these historical events influenced income inequality trends among the states. The first section includes data cleaning, summarising, and data visualisation. The second part focuses on Principal Component Analysis (PCA) as the primary dimensionality reduction method, with the addition of cluster analysis and Multidimensional Scaling (MDS).
+
+**Authors**  
+👾 [Evan Ginting](https://github.com/evanginting)  
+👾 [Alexandra Goh](https://github.com/agoh0008)  
+👾 [Pei Lim](https://github.com/plim0015)  
+👾 [Huyen-Anh Pham](https://github.com/averie-archives)  
+
+:::{.callout-tip}
+This blog post is an overview and summary of the report. To view the full PDF report, please click [here](/projects/gini_pca/gini_pca.pdf).
+:::
+
+## What we did...
+
+### EDA   
+
+![](eda-boxplot.png)
+
+![](eda-map.png)
+
+### Cluster Analysis  
+
+**The 1st Period (1929 - 1945)**  
+![Cluster Analysis of the 1st Period (1929 - 1945)](ca-1-dendrogram.png)
+
+![Cluster Profiles for the 1st Period: Five-cluster Solution](ca-1-cluster-profile.png)
+
+**The 2nd period (2007 - 2015)**  
+
+![Cluster Analysis of the 2nd Period (2007 - 2015)](ca-2-dendrogram.png)
+![Cluster Profiles for the 2nd Period: Five-cluster Solution](ca-2-cluster-profile.png)
+
+
+### Multidimensional Scaling (MDS)  
+**The 1st Period (1929 - 1945)**  
+![MDS by U.S. state for the 1st period (1929 - 1945)](mds-1.png)
+
+![Gini Index of the outlier states between 1929 and 1945](mds-1-line.png)
+
+**The 2nd period (2007 - 2015)**  
+
+![MDS by U.S. state for the 2nd period (2007 - 2015)](mds-2.png)
+
+![Gini Index of the outlier states between 2007 and 2015](mds-2-line.png)
+
+### Principal Component Analysis (PCA)  
+**The 1st Period (1929 - 1945)**   
+
+![Distance Biplot - PCA of the 1st period](dbiplot-1.png)
+![Correlation Biplot - PCA of the 1st period](cbiplot-1.png)
+
+**The 2nd period (2007 - 2015)**  
+
+![Distance Biplot - PCA of the 2nd period](dbiplot-2.png)
+
+![Correlation Biplot - PCA of the 2nd period](cbiplot-2.png)
+
+## What we found...
+
+Our analysis of income inequality during the Great Depression, WWII, and the GFC revealed significant findings:
+
+**The Great Depression/WWII**
+
+-   A five-cluster approach effectively groups states for detailed analysis.
+
+-   States closer to the center in our MDS analysis show lower income inequality during these periods.
+
+-   PC1 reflects higher GDP and lower unemployment, indicating recovery from the Great Depression.
+
+-   PC2 strongly correlates with economic conditions during these events.
+
+**The Global Financial Crisis (GFC)**
+
+-   A five-cluster solution is again useful for meaningful groupings.
+
+-   States shifted away from the center in our MDS analysis, indicating increased income inequality overall compared to the previous era.
+
+-   PC1 aligns with the GFC recovery period (2009--2015), while PC2 relates to the GFC itself (2007 - 2008), reflecting changes in the GDP.
+
+In summary, our analysis provided valuable insights into income inequality during critical historical events. To enhance our understanding, we recommend incorporating Factor Models and additional economic indicators. This will help us better interpret the complex economic dynamics shaped by these significant events.

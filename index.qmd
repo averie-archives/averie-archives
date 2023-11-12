@@ -1,0 +1,28 @@
+---
+title: "averie's archives"
+about:
+  template: trestles
+  links:
+    - icon: code-slash
+      text: Projects
+      href: projects.qmd
+    - icon: github
+      text: Github
+      href: https://github.com/averie-archives
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/huyenanh-pham/
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/huyen_anh_pham
+    - icon: envelope
+      text: Email
+      href: "mailto:huyenanh.pham9720@gmail.com"
+    - icon: file-text
+      text: CV
+      href: files/cv.pdf
+---
+
+Hi! 👋🏼
+
+I'm Huyen-Anh Pham - I am a Master of Business Analytics student at Monash University. I have prior experience as a Data Analyst at Techcom Securities, and as a public accounting associate for financial institutions at EY Vietnam.
